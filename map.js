@@ -26,7 +26,7 @@ const webcamMarkers = [
   L.marker([50.62352016872212, -1.1762112244116065]).bindPopup("<strong>Shanklin Bay</strong><br><a href=\"https://www.isleofwight.com/webcams/shanklin/\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
   L.marker([50.76683552935895, -1.3123678422613165]).bindPopup("<strong>Cowes</strong><br><a href=\"https://www.isleofwight.com/webcams/cowes/\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
   L.marker([50.82143788156671, -0.15091398912534737]).bindPopup("<strong>Brighton i360</strong><br><a href=\"https://www.brightoncctv.co.uk/i360-cams\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
-  L.marker([50.811945875210306, -0.10310134610441692]).bindPopup("<strong>Brighton Marina</strong><br><a href=\"https://www.camsecure.co.uk/Camsecure2/Brighton_Harbour_Webcam.html#google_vignette\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
+  L.marker([50.826685478969516, -0.198701817270568]).bindPopup("<strong>Hove Lagoon</strong><br><a href=\"https://www.camsecure.co.uk/Camsecure2/Brighton_Harbour_Webcam.html#google_vignette\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
   L.marker([50.39973710115248, -3.5039249164071338]).bindPopup("<strong>Brixham Breakwater</strong><br><a href=\"https://www.camsecure.co.uk/brixham_breakwater.html\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
   L.marker([50.398778750976156, -3.5059495532882523]).bindPopup("<strong>Brixham Harbour</strong><br><a href=\"https://www.camsecure.co.uk/Camsecure3/Brixham_Harbour.html\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
   L.marker([50.39908497859471, -3.514379070709676]).bindPopup("<strong>Brixham Yacht Club</strong><br><a href=\"https://www.camsecure.co.uk/brixham_sailing_webcam.html\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
@@ -77,4 +77,5 @@ webcams.forEach(cam => {
 L.marker([cam.lat, cam.lon])
 .addTo(map)
 .bindPopup(`<strong>${cam.name}</strong><br><a href="${cam.url}" target="_blank">View webcam</a>`);
+
 });

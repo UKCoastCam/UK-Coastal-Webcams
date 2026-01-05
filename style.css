@@ -11,3 +11,24 @@ margin: 10px 0;
 #map {
 height: 90vh;
 }
+.button-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.submit-btn {
+display: inline-block; /* makes it shrink to content */
+padding: 12px 24px; /* vertical + horizontal padding */
+background: #2c7be5;
+color: white;
+text-decoration: none;
+font-weight: bold;
+border-radius: 6px; /* optional: rounded corners */
+text-align: center;
+margin: 10px auto; /* center horizontally */
+cursor: pointer; /* makes it look clickable */
+}
+
+/* hover effect */
+.submit-btn:hover {
+background: #1a5fc2;
+}

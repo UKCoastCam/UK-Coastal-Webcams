@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link
+rel="stylesheet"
+href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"
+/>
 <meta charset="UTF-8">
 <title>UK Coastal Webcams</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
@@ -8,9 +12,20 @@
 </head>
 <body>
 <h1>UK Coastal Webcams</h1>
+<div class="button-container">
+<a
+href="https://docs.google.com/forms/d/e/1FAIpQLSeFILCsLrJ-_kakaVQS-76GhcW53o9hrddo6p1OZykRktK7Rw/viewform?usp=dialog
+K"
+target="_blank"
+class="submit-btn"
+>
+Click here to submit a coastal webcam
+</a>
+</div>
 <div id="map"></div>
 
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
 <script src="map.js"></script>
 </body>
 </html>

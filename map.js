@@ -1,6 +1,16 @@
 // Create map centred on UK
 const map = L.map('map').setView([54.5, -3], 6);
-
+L.Control.geocoder({
+defaultMarkGeocode: false,
+placeholder: "Search UK places…",
+geocoder: L.Control.Geocoder.nominatim({
+geocodingQueryParams: { countrycodes: 'gb' }
+})
+})
+.on('markgeocode', function (e) {
+map.fitBounds(e.geocode.bbox);
+})
+.addTo(map);
 // Add map tiles
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 attribution: '© OpenStreetMap contributors'

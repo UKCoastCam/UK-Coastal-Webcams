@@ -68,7 +68,7 @@ const webcamMarkers = [
   L.marker([54.07364686696934, -2.8651280885312445]).bindPopup("<strong>Morcambe Bay</strong><br><a href=\"https://www.webcamtaxi.com/en/england/lancashire/morecambe-bay.html\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
   L.marker([54.07562016935932, -2.8611937065268718]).bindPopup("<strong>Morcambe Bay, Marine Rd</strong><br><a href=\"https://www.webcamtaxi.com/en/england/lancashire/marine-rd-morecambe.html\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
   L.marker([54.20216039828964, -2.8345450688551286]).bindPopup("<strong>Arnside Pier</strong><br><a href=\"https://arnsidechipshop.co.uk/piercam\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
-  L.marker([54.063944460363075, -3.174379158514843]).bindPopup("<strong>Piel Island</strong><br><a href=\"https://www.cumbriawildlifetrust.org.uk/wildlife/cams/seal-cam\" target=\"_blank\" rel=\"noopener\">View webcam</a>")
+  L.marker([54.063944460363075, -3.174379158514843]).bindPopup("<strong>Piel Island</strong><br><a href=\"https://www.cumbriawildlifetrust.org.uk/wildlife/cams/seal-cam\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
   L.marker([54.063944460363075, -3.174379158514843]).bindPopup("<strong>Piel Island</strong><br><a href=\"https://www.cumbriawildlifetrust.org.uk/wildlife/cams/seal-cam\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
   L.marker([53.74970742734678, -3.0335564430696706]).bindPopup("<strong>St Annes Beach</strong><br><a href=\"https://www.discoverfylde.co.uk/st-annes-beach-webcam/\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
   L.marker([54.08024864074025, -0.19345826719300996]).bindPopup("<strong>Bridlington Harbour</strong><br><a href=\"https://www.bridhub.co.uk/public/Brid-Harbour-Cam.cfm\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
@@ -77,7 +77,7 @@ const webcamMarkers = [
   L.marker([52.950234678108934, 0.49429241094576803]).bindPopup("<strong>Hunstanton Old Beach</strong><br><a href=\"https://hunstanton.webcam/cliff-top\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
   L.marker([52.94146843487469, 0.4867726703816871]).bindPopup("<strong>Sailing Club, North Promenade, Hunstanton</strong><br><a href=\"https://hunstanton.webcam/north-prom\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
   L.marker([52.92878332495032, 0.4782857933936984]).bindPopup("<strong>South Beach, Hunstanton</strong><br><em>Position requires refining</em><br><a href=\"https://hunstanton.webcam/south-beach\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
-  L.marker([52.938527183098955, 0.4855339480827639]).bindPopup("<strong>South Promenade, Hunstanton</strong><br><a href=\"https://hunstanton.webcam/south-prom\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
+  L.marker([52.938527183098955, 0.4855339480827639]).bindPopup("<strong>South Promenade, Hunstanton</strong><br><a href=\"https://hunstanton.webcam/south-prom\" target=\"_blank\" rel=\"noopener\">View webcam</a>")
 ];
 
 webcamMarkers.forEach(m => m.addTo(map));
@@ -88,5 +88,6 @@ L.marker([cam.lat, cam.lon])
 .bindPopup(`<strong>${cam.name}</strong><br><a href="${cam.url}" target="_blank">View webcam</a>`);
 
 });
+
 
 

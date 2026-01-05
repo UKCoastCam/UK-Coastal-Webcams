@@ -77,7 +77,17 @@ const webcamMarkers = [
   L.marker([52.950234678108934, 0.49429241094576803]).bindPopup("<strong>Hunstanton Old Beach</strong><br><a href=\"https://hunstanton.webcam/cliff-top\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
   L.marker([52.94146843487469, 0.4867726703816871]).bindPopup("<strong>Sailing Club, North Promenade, Hunstanton</strong><br><a href=\"https://hunstanton.webcam/north-prom\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
   L.marker([52.92878332495032, 0.4782857933936984]).bindPopup("<strong>South Beach, Hunstanton</strong><br><em>Position requires refining</em><br><a href=\"https://hunstanton.webcam/south-beach\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
-  L.marker([52.938527183098955, 0.4855339480827639]).bindPopup("<strong>South Promenade, Hunstanton</strong><br><a href=\"https://hunstanton.webcam/south-prom\" target=\"_blank\" rel=\"noopener\">View webcam</a>")
+  L.marker([52.938527183098955, 0.4855339480827639]).bindPopup("<strong>South Promenade, Hunstanton</strong><br><a href=\"https://hunstanton.webcam/south-prom\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
+  L.marker([52.95839135660154, 0.8505047169492744]).bindPopup("<strong>Wells Harbour</strong><br><a href=\"https://www.portofwells.co.uk/webcam/\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
+  L.marker([55.54524784687084, -4.6782473541442275]).bindPopup("<strong>Troon Yacht Haven - Fuel Berth</strong><br><a href=\"https://g0.ipcamlive.com/player/player.php?alias=tyhfuel&skin=white&autoplay=0&mute=1&timelapseplayerenabled=1\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
+  L.marker([55.77227128265369, -4.858405543983]).bindPopup("<strong>Largs Yacht Haven - Entrance</strong><br><a href=\"https://g0.ipcamlive.com/player/player.php?alias=layhentrance&skin=white&autoplay=0&mute=1&timelapseplayerenabled=1\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
+  L.marker([51.36224671196267, 1.0253456976373665]).bindPopup("<strong>Whitstable Yacht Club, Kent</strong><br><a href=\"https://www.wyc.org.uk/webcam-weather-tides/\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
+  L.marker([55.576647140848216, -5.1369939421329756]).bindPopup("<strong>Arran - Brodick Ferry Terminal</strong><br><a href=\"https://www.twitch.tv/cmalbrodick\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
+  L.marker([55.707649395530844, -5.301770339127706]).bindPopup("<strong>Arran - Loch Ranza Ferry Terminal</strong><br><a href=\"https://www.twitch.tv/cmallochranza\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
+  L.marker([51.22402186849869, 1.4043131324588851]).bindPopup("<strong>Clarendon Hotel, Deal, Kent.</strong><br><a href=\"https://www.skylinewebcams.com/en/webcam/united-kingdom/england/deal/deal-kent.html\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
+  L.marker([51.33214376700279, 1.423059756291877]).bindPopup("<strong>The Waterfront Pub, Ramsgate, Kent.</strong><br><a href=\"https://www.youtube.com/live/q_43ulLyBeY\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
+  L.marker([51.37606332586415, 0.6751428857367693]).bindPopup("<strong>Lower Halstow Yacht Club, Medway, Kent</strong><br><a href=\"https://weather.lhyc.org.uk/live/\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
+  L.marker([51.44042549215772, 0.778597663134572]).bindPopup("<strong>Isle of Sheppey Sailing Club, Sheerness, Kent.</strong><br><a href=\"https://www.iossailingclub.com/webcam-and-weather\" target=\"_blank\" rel=\"noopener\">View webcam</a>")
 ];
 
 webcamMarkers.forEach(m => m.addTo(map));
@@ -88,6 +98,7 @@ L.marker([cam.lat, cam.lon])
 .bindPopup(`<strong>${cam.name}</strong><br><a href="${cam.url}" target="_blank">View webcam</a>`);
 
 });
+
 
 
 

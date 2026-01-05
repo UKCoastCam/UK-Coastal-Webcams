@@ -12,23 +12,36 @@ margin: 10px 0;
 height: 90vh;
 }
 .button-container {
-    text-align: center;
-    margin-bottom: 10px;
-}
-.submit-btn {
-display: inline-block; /* makes it shrink to content */
-padding: 12px 24px; /* vertical + horizontal padding */
-background: #2c7be5;
-color: white;
-text-decoration: none;
-font-weight: bold;
-border-radius: 6px; /* optional: rounded corners */
-text-align: center;
-margin: 10px auto; /* center horizontally */
-cursor: pointer; /* makes it look clickable */
+text-align: center; /* center the buttons horizontally */
+margin-bottom: 10px;
 }
 
-/* hover effect */
+/* shared styles for both buttons */
+.button-container a {
+display: inline-block;
+padding: 12px 24px;
+font-weight: bold;
+text-decoration: none;
+border-radius: 6px;
+cursor: pointer;
+margin: 0 5px; /* space between buttons */
+}
+
+/* specific button colors */
+.submit-btn {
+background: #2c7be5;
+color: white;
+}
+
 .submit-btn:hover {
 background: #1a5fc2;
+}
+
+.report-btn {
+background: #e52c2c;
+color: white;
+}
+
+.report-btn:hover {
+background: #b21f1f;
 }

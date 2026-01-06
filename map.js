@@ -128,7 +128,7 @@ L.marker([52.82401018349658, -4.498773499201506]).bindPopup("<strong>Abersoch Ma
 L.marker([52.943536393335485, -4.567956486162049]).bindPopup("<strong>Ty Coch Inn</strong><br><a href=\"http://www.tycoch.co.uk/\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
 L.marker([52.15980275177253, -4.471635140436448]).bindPopup("<strong>Llangrannog Beach</strong><br><a href=\"https://www.camsecure.co.uk/llangrannog_beach_webcam.html\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
 L.marker([53.14304240739951, -4.275962453809385]).bindPopup("<strong>Victoria Dock</strong><br>3x webcam views<br><a href=\"https://www.caernarfonharbour.org.uk/webcams/\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
-L.marker([52.91219107900811, -4.099226443627253]).bindPopup("<strong>Portmeirion Estuary</strong><br>Live Streaming Webcams — Portmeirion North Wales<br><a href=\"https://portmeirion.wales/galleries/web-cams\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
+L.marker([52.91219107900811, -4.099226443627253]).bindPopup("<strong>Portmeirion Estuary</strong><br><br><a href=\"https://portmeirion.wales/galleries/web-cams\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
 L.marker([53.25518382741184, -4.102483930811804]).bindPopup("<strong>Northern Menai Strait</strong><br>NWVYC Webcam — Caernarfon Harbour Trust<br><a href=\"https://www.caernarfonharbour.org.uk/nwvyc-webcam/\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
 L.marker([54.278370563200866, -2.9555181737220373]).bindPopup("<strong>Lakeside Pier</strong><br>Lakeside Webcam<br><a href=\"https://www.windermere-lakecruises.co.uk/webcam/lakeside-webcam\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
 L.marker([54.41969480113176, -2.9623977046965613]).bindPopup("<strong>Ambleside (Waterhead) Pier</strong><br>Ambleside Webcam<br><a href=\"https://www.windermere-lakecruises.co.uk/webcam/ambleside-webcam\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
@@ -150,3 +150,4 @@ webcamMarkers.forEach(marker => {
 // Add cluster to map
 // --------------------
 map.addLayer(markerCluster);
+

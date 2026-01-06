@@ -1,25 +1,45 @@
-// Create map centred on UK
+
+
+// --------------------
+// Create map centred on the UK
+// --------------------
 const map = L.map('map').setView([54.5, -3], 6);
+
+// --------------------
+// Add UK-only search
+// --------------------
 L.Control.geocoder({
-defaultMarkGeocode: false,
-placeholder: "Search UK places…",
-geocoder: L.Control.Geocoder.nominatim({
-geocodingQueryParams: { countrycodes: 'gb' }
+  defaultMarkGeocode: false,
+  placeholder: "Search UK places…",
+  geocoder: L.Control.Geocoder.nominatim({
+    geocodingQueryParams: { countrycodes: "gb" }
+  })
 })
-})
-.on('markgeocode', function (e) {
-map.fitBounds(e.geocode.bbox);
+.on("markgeocode", function (e) {
+  map.fitBounds(e.geocode.bbox);
 })
 .addTo(map);
-// Add map tiles
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-attribution: '© OpenStreetMap contributors'
+
+// --------------------
+// Add OpenStreetMap tiles
+// --------------------
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  attribution: "© OpenStreetMap contributors"
 }).addTo(map);
 
-const webcamMarkers = [
- 
+// --------------------
+// Create marker cluster group
+// --------------------
+const markerCluster = L.markerClusterGroup({
+  disableClusteringAtZoom: 12,
+  chunkedLoading: true
+});
 
-// --- Sheet1: lines 2 → 95 (commas at line ends) ---
+// --------------------
+// Webcam markers
+// --------------------
+const webcamMarkers = [
+
 
 L.marker([50.66268307823406, -1.5837663777002342]).bindPopup("<strong>Needles</strong><br><a href=\"https://www.isleofwight.com/webcams/needles/\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
 L.marker([50.69449829765143, -1.5333713657086285]).bindPopup("<strong>Colwell Bay</strong><br><a href=\"https://www.isleofwight.com/webcams/colwell/\" target=\"_blank\" rel=\"noopener\">View webcam</a>"),
@@ -117,18 +137,16 @@ L.marker([54.409455547725386, -2.948697435041926]).bindPopup("<strong>Low Wood B
 L.marker([54.353023708761924, -2.939774299871883]).bindPopup("<strong>Ferry ramp</strong><br>Ferry Cam — Freshwater Biological Association<br><a href=\"https://www.fba.org.uk/windermere-ferry-cam\" target=\"_blank\" rel=\"noopener\">View webcam</a>")
 
 
-
 ];
 
-webcamMarkers.forEach(m => m.addTo(map));
-
-webcams.forEach(cam => {
-L.marker([cam.lat, cam.lon])
-.addTo(map)
-.bindPopup(`<strong>${cam.name}</strong><br><a href="${cam.url}" target="_blank">View webcam</a>`);
+// --------------------
+// Add webcams to cluster
+// --------------------
+webcamMarkers.forEach(marker => {
+  markerCluster.addLayer(marker);
 });
 
-
-
-
-
+// --------------------
+// Add cluster to map
+// --------------------
+map.addLayer(markerCluster);
